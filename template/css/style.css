@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:400,600,500&subset=latin,cyrillic);
+
+html {
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    height: 100%;
+}
+
+body {
+    width: 900px;
+    margin: 40px auto;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+}
+
+table {
+    border-spacing: 0;
+    width: 100%;    
+}
+
+.bordered {
+    border: solid #000000 0px;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #000000;         
+}
+
+.bordered tr:hover {
+    background: #35506c;
+    transition: all 0.1s ease-in-out;     
+}    
+    
+.bordered td, .bordered th {
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+    padding: 15px;
+    text-align: left;    
+}
+
+.bordered th {
+    background-color: #dce9f9;
+	background-image: linear-gradient(top, #101010, #1c1c1c);
+	background-image: -webkit-linear-gradient(top, #101010, #1c1c1c);
+    box-shadow: 0 1px 0 rgba(177, 255, 0, 0.8) inset;             
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+}
+
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+
+.bordered th:first-child {
+    border-radius: 6px 0 0 0;
+}
+
+.bordered th:last-child {
+    border-radius: 0 6px 0 0;
+}
+
+.bordered tr:last-child td:first-child {
+    border-radius: 0 0 0 6px;
+}
+
+.bordered tr:last-child td:last-child {
+    border-radius: 0 0 6px 0;
+}
+.a_button {
+	background-color:#070707;
+	padding:10px;
+	position:relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#ffffff;
+	border: solid 1px #000000;
+	background-image: linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(53, 55, 56) 0%, rgb(25, 25, 25) 100%);
+	box-shadow: inset 0px 1px 0px #454545, 0px 1px 0px #0a597e;
+	border-radius: 5px;
+}
+.a_button:active {
+	padding-bottom:9px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:11px;
+	top:1px;
+	background-image: linear-gradient(bottom, rgb(196, 50, 174) 0%, rgb(76, 91, 203) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(196, 50, 174) 0%, rgb(76, 91, 203) 100%);
+}
