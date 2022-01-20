@@ -52,7 +52,7 @@ try {
 			closedir($handle);
 			}
 		}
-		echo 'Старые файлы удалены<br>';
+		//echo 'Старые файлы удалены<br>';
 	}
 
 } catch (Exception $e) { 
@@ -61,6 +61,6 @@ try {
 	$html = file_get_contents('template/error.tpl');
 	$html = str_replace('{title}', 'Ошибка', $html);
 	$html = str_replace('{error}', $error, $html);
-    echo $html;
+    //echo $html;
 }
 ?>
