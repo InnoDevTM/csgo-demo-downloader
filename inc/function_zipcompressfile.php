@@ -6,7 +6,7 @@ function zipcompressfile($source,$destination,$filename,$level=false)
 	$dest=$destination.$filename.'.zip';
 	$mode='wb'.$level;
 	$error=false;
-	echo $source.$filename.' -> '.$dest.'<br>';
+	//echo $source.$filename.' -> '.$dest.'<br>';
 	if($fp_out=gzopen($dest,$mode))
 	{
 		if($fp_in=fopen($source.$filename,'rb'))
